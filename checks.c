@@ -97,3 +97,20 @@ void free_dlistint(stack_t *head)
 		head = next;
 	}
 }
+
+/**
+ * rm_head - deletes head node
+ * @head: pointer to list
+ */
+
+void rm_head(stack_t **head)
+{
+	stack_t *temp = *head, *temp_d = NULL;
+
+	temp_d = temp;
+	if ((*temp).next != NULL)
+		(*temp).next->prev = NULL;
+	*head = (*temp).next;
+	free(temp_d);
+}
+
