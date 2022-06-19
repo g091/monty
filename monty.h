@@ -51,5 +51,6 @@ void m_nop(stack_t **stack, unsigned int n_line);
 void m_sub(stack_t **stack, unsigned int n_line);
 void m_div(stack_t **stack, unsigned int n_line);
 void m_mul(stack_t **stack, unsigned int n_line);
+void m_mod(stack_t **stack, unsigned int n_line);
 
 #endif
