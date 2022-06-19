@@ -45,5 +45,8 @@ void m_push(stack_t **stack, unsigned int n_line);
 void m_pall(stack_t **stack, unsigned int n_line);
 void m_pint(stack_t **stack, unsigned int n_line);
 void m_pop(stack_t **stack, unsigned int n_line);
+void m_swap(stack_t **stackk, unsigned int n_line);
+void m_add(stack_t **stack, unsigned int n_line);
+void m_nop(stack_t **stack, unsigned int n_line);
 
 #endif
