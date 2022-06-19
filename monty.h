@@ -39,8 +39,11 @@ void (*opcode_func(char *s))(stack_t **stack, unsigned int n_line);
 int _isdigit(char *c);
 size_t dlistint_len(const stack_t *h);
 void free_dlistint(stack_t *head);
+void rm_head(stack_t **head);
 
 void m_push(stack_t **stack, unsigned int n_line);
 void m_pall(stack_t **stack, unsigned int n_line);
+void m_pint(stack_t **stack, unsigned int n_line);
+void m_pop(stack_t **stack, unsigned int n_line);
 
 #endif
