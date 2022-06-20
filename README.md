@@ -63,7 +63,7 @@
 		* Usage: nop
 
 **ADVANCED TASKS**
-# done 4/14
+# done 5/14
 
 6. Implement the sub opcode.
 
@@ -98,7 +98,7 @@
 	* The result is stored in the second top element of the stack, and the top element is removed, so that at the end:
 		* The top element of the stack contains the result
 		* The stack is one element shorter
-		
+
 9. Implement the mod opcode.
 
 ***The mod opcode***
@@ -110,7 +110,7 @@
 		* The top element of the stack contains the result
 		* The stack is one element shorter
 	* If the top element of the stack is 0, print the error message L<line_number>: division by zero, followed by a new line, and exit with the status EXIT_FAILURE
-	
+
 10. Every good language comes with the capability of commenting. When the first non-space character of a line is #, treat this line as a comment (don’t do anything
 
 11. Implement the pchar opcode.
@@ -144,7 +144,7 @@
 		* Usage: rotl
 		* The top element of the stack becomes the last one, and the second top element of the stack becomes the first one
 		* rotl never fails
-		
+
 14. Implement the rotr opcode.
 
 ***The rotr opcode***
@@ -160,12 +160,12 @@
 
 	* The opcode stack sets the format of the data to a stack (LIFO). This is the default behavior of the program.
 		* Usage: stack
-		
+
 ***The queue opcode***
 
 	* The opcode queue sets the format of the data to a queue (FIFO).
 		* Usage: queue
-	
+
 	* When switching mode:
 		* The top of the stack becomes the front of the queue
 		* The front of the queue becomes the top of the stack
